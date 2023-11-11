@@ -5,7 +5,7 @@ const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
       {friends.map(friend => (
-        <FriendListItem key={friend.id} friends={friends} />
+        <FriendListItem key={friend.id} friend={friend} />
       ))}
     </ul>
   );
@@ -13,6 +13,7 @@ const FriendList = ({ friends }) => {
 
 const FriendListItem = ({ friend }) => {
   const { avatar, name, isOnline } = friend;
+
   return (
     <li className={css.item}>
       <span className={`${css.status} ${isOnline ? css.online : css.offline}`}></span>
