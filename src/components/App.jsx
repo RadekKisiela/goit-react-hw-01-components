@@ -16,11 +16,12 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        // justifyContent: 'center',
+        justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column',
         fontSize: 40,
         color: '#010101',
+        gap: 15,
+        flexWrap: 'wrap',
       }}
     >
       <Profile
